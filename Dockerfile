@@ -154,7 +154,7 @@ RUN apt-get update -qq && DEBIAN_FRONTEND=noninteractive apt-get -yq dist-upgrad
     libpq-dev \
     postgresql-client-$PG_MAJOR \
     default-libmysqlclient-dev \
-    mysqlclient \
+    mysql-client \
     nodejs \
     yarn=$YARN_VERSION-1 && \
     apt-get clean && \
