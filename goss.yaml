@@ -11,3 +11,8 @@ file:
     exists: true
     mode: "2777"
     owner: root
+command:
+  "ruby --version":
+    exit-status: 0
+    stdout:
+    - ruby 2.3.8
