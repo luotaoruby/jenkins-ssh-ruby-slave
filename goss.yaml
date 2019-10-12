@@ -3,3 +3,11 @@ port:
     listening: true
     ip:
     - 0.0.0.0
+file:
+  /usr/local/etc/gemrc:
+    exists: true
+  /usr/local/bundle:
+    filetype: directory
+    exists: true
+    mode: "2777"
+    owner: root
