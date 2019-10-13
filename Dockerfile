@@ -1,4 +1,4 @@
-FROM luotaoruby/jenkins-ssh-slave:1.0.0
+FROM luotaoruby/jenkins-ssh-slave
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
       ca-certificates \
