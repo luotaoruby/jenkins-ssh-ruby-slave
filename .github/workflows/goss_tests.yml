@@ -16,4 +16,4 @@ jobs:
     - name: Build docker image
       run: docker build . -t luotaoruby/jenkins-ssh-ruby-slave
     - name: Run goss tests
-      run: GOSS_PATH="$HOME/bin/goss" dgoss run -t luotaoruby/jenkins-ssh-ruby-slave
+      run: GOSS_PATH="$HOME/bin/goss" $HOME/bin/dgoss run -t luotaoruby/jenkins-ssh-ruby-slave
