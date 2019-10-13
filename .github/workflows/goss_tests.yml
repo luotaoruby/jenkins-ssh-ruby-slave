@@ -1,0 +1,19 @@
+name: tests
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v1
+    - name: Install goss
+      run: |
+        mkdir -p ~/bin
+        curl -fsSL https://goss.rocks/install | GOSS_VER=v0.3.6 GOSS_DST=~/bin sh
+    - name: Build docker image
+      run: docker build . -t luotaoruby/jenkins-ssh-ruby-slave
+    - name: Run goss tests
+      run: GOSS_PATH="$HOME/bin/goss" dgoss run -t luotaoruby/jenkins-ssh-ruby-slave
