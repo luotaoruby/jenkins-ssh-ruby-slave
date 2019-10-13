@@ -4,8 +4,6 @@
 ![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/luotaoruby/jenkins-ssh-ruby-slave)
 ![Docker Pulls](https://img.shields.io/docker/pulls/luotaoruby/jenkins-ssh-ruby-slave)
 
-## Use
+## Tags
 
-```
-docker pull luotaoruby/jenkins-ssh-ruby-slave:ruby-2.3.8
-```
+- `ruby-2.3.8`
