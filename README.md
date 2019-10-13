@@ -6,6 +6,8 @@
 
 ## Use
 
+`ruby-2.3.8`
+
 ```
 docker pull luotaoruby/jenkins-ssh-ruby-slave:ruby-2.3.8
 ```
