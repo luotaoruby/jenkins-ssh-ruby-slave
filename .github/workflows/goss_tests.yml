@@ -15,8 +15,8 @@ jobs:
         curl -fsSL https://goss.rocks/install | GOSS_VER=v0.3.6 GOSS_DST=~/bin sh
     - name: Build docker image
       run: docker build . -t luotaoruby/jenkins-ssh-ruby-slave
-    - name: Run goss tests
-      run: GOSS_PATH="$HOME/bin/goss" $HOME/bin/dgoss run -t luotaoruby/jenkins-ssh-ruby-slave
+    # - name: Run goss tests
+    #   run: GOSS_PATH="$HOME/bin/goss" $HOME/bin/dgoss run -t luotaoruby/jenkins-ssh-ruby-slave
     - name: Publish to dockerhub
       uses: elgohr/Publish-Docker-Github-Action@master
       with:
