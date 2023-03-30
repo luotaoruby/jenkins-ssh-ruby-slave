@@ -18,7 +18,7 @@ jobs:
     - name: Run goss tests
       run: GOSS_PATH="$HOME/bin/goss" $HOME/bin/dgoss run -t luotaoruby/jenkins-ssh-ruby-slave
     - name: Publish to dockerhub
-      uses: elgohr/Publish-Docker-Github-Action@master
+      uses: elgohr/Publish-Docker-Github-Action@v5
       with:
         name: luotaoruby/jenkins-ssh-ruby-slave
         username: ${{ secrets.DOCKER_USERNAME }}
